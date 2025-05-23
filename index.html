@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toggle-bar">
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+    <select id="unitSelect">
+      <option value="metric">°C</option>
+      <option value="imperial">°F</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <input type="text" id="cityInput" placeholder="Enter City">
+    <button id="searchButton">Search</button>
+
+    <div id="weatherInfo">
+      <div id="icon"></div>
+      <div id="city"></div>
+      <div id="temp"></div>
+      <div id="humidity"></div>
+      <div id="wind"></div>
+      <div id="uvIndex"></div>
+      <div id="visibility"></div>
+      <div id="airQuality"></div>
+    </div>
+
+    <h2>Hourly Forecast</h2>
+    <div id="hourlyForecast" class="forecast-container"></div>
+
+    <h2>5-Day Forecast</h2>
+    <div id="dailyForecast" class="forecast-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
